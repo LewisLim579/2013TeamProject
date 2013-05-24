@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/na_2" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="신진대사가 느린 편이어서 지방 연소가 어렵고 운동을 해도 근육이 잘 드러나지 않는 체형이다.
+골격이 크고 넓은 편이며 근육 조직이 부드러운 편이어서
+몸무게와 체지방이 쉽게 증가한다.
+운동에 대한 반응 효과는 높지만, 살도 쉽게 찌는 유형이다.
+운동과 다이어트를 그만두면 체중이 급격히 증가할 수 있다.
+" >
+
+        <requestFocus />
+    </EditText>
+    
+</RelativeLayout>

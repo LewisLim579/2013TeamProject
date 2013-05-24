@@ -1,0 +1,21 @@
+package com.example.ptsapp;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class Bmi_Result extends Activity {
+    /** Called when the activity is first created. */
+    private TextView showbmi;
+    
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.bmiresult);
+        
+        System.out.println(Bmi.result_bmi);
+         
+       showbmi = (TextView) findViewById(R.id.rebmi);
+       showbmi.setText(""+Bmi.result_bmi);
+        
+    }
+}
