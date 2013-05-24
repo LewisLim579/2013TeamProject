@@ -7531,3 +7531,12 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2013-05-25 02:02:37.767
 !MESSAGE c_jung.xml: Dimension "5" in attribute "layout_height" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-05-25 02:49:36.479
+!MESSAGE howtoex.xml: Dimension "40" in attribute "layout_marginTop" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-05-25 02:50:32.121
+!MESSAGE howtoex.xml: Dimension "40" in attribute "layout_marginTop" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-05-25 02:50:32.267
+!MESSAGE howtoex.xml: Dimension "40" in attribute "layout_marginTop" is missing unit!

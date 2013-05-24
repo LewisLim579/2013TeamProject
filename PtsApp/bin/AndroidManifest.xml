@@ -61,6 +61,10 @@
             android:name="com.example.ptsapp.Schedule" >
            
         </activity>
+        <activity
+            android:name="com.example.ptsapp.Howtoex" >
+           
+        </activity>
     </application>
 
 </manifest>

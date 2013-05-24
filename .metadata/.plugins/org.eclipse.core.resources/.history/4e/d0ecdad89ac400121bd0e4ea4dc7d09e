@@ -14,17 +14,10 @@ public class MainMenu extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.menu);
 		ImageButton b = (ImageButton) findViewById(R.id.btn1);
-		ImageButton b2 = (ImageButton) findViewById(R.id.btn2);
 		ImageButton b3 = (ImageButton) findViewById(R.id.btn3);
 		b.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent(MainMenu.this, Distinguish.class);
-				startActivity(intent);
-			}
-		});
-		b2.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				Intent intent = new Intent(MainMenu.this, Howtoex.class);
 				startActivity(intent);
 			}
 		});
