@@ -7540,3 +7540,12 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2013-05-25 02:50:32.267
 !MESSAGE howtoex.xml: Dimension "40" in attribute "layout_marginTop" is missing unit!
+!SESSION 2013-05-25 03:01:02.173 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.6.0_41
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 2 2013-05-25 03:01:30.273
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
