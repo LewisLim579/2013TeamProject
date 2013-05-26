@@ -19,4 +19,5 @@
 <fullyQualifiedTypeName name="com.example.ptsapp.MainActivity"/>
 <fullyQualifiedTypeName name="com.example.ptsapp.Mainmenu"/>
 <fullyQualifiedTypeName name="android.widget.ImageButton"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.R.id"/>
 </qualifiedTypeNameHistroy>
