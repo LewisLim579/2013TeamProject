@@ -74,6 +74,38 @@
             android:name="com.example.ptsapp.Hache">
            
         </activity>
+        <activity
+            android:name="com.example.ptsapp.Sa1">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Sa2">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Sa3">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Sa4">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Sa5">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Ha1">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Ha2">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Ha3">
+           
+        </activity>
     </application>
 
 </manifest>
