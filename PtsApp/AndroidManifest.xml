@@ -106,6 +106,86 @@
             android:name="com.example.ptsapp.Ha3">
            
         </activity>
+        <activity
+            android:name="com.example.ptsapp.How1">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How2">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How3">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How4">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How5">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How6">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How7">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How8">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How9">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How10">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How11">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How12">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How13">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How14">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How15">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How16">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How17">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How18">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How19">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How20">
+           
+        </activity>            
     </application>
 
 </manifest>
