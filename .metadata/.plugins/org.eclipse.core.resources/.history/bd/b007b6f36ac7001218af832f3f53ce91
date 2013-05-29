@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ptsapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">" >
+        <activity
+            android:name="com.example.ptsapp.Loading"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.ptsapp.MainMenu"
+             >
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Distinguish" >
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Bmi" >
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Starc" >
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.C_jung" >
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.C_na" >
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.C_oi" >
+           
+        </activity>
+        
+        <activity
+            android:name="com.example.ptsapp.Bmi_Result" >
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Schedule" >
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Howtoex" >
+           
+        </activity>
+        
+        <activity
+            android:name="com.example.ptsapp.Sangche" >
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Hache">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Sa1">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Sa2">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Sa3">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Sa4">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Sa5">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Ha1">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Ha2">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Ha3">
+           
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.How1">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How2">
+           
+        </activity>
+<activity
+            android:name="howtoexercise.How3">
+           
+        </activity>
+<activity
+            android:name="howtoexercise.How4">
+           
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How5">
+           
+        </activity>
+<activity
+            android:name="com.examplhowtoexercise.How6     
+        </activity>
+<activity
+            android:name="com.ehowtoexercise.How7          
+        </activity>
+<activity
+            android:name="com.ehowtoexercise.How8          
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How9">
+           
+        </activity>
+<activity
+            android:name="com.ehowtoexercise.How10          
+        </activity>
+<activity
+            android:name="com.example.ptsapp.Hhowtoexercise.How11     </activity>
+<activity
+            android:name="com.examplhowtoexercise.How12     
+        </activity>
+<activity
+            android:name="com.ehowtoexercise.How13          
+        </activity>
+<activity
+            android:name="com.example.ptsapp.How14"howtoexercise.How14</activity>
+<activity
+            android:name="com.example.ptsapp.How15">
+           
+        <howtoexercise.How15           android:name="com.example.ptsapp.How16">
+       howtoexercise.How16>
+<activity
+            android:name="com.example.ptsapp.How17">
+       howtoexercise.How17>
+<activity
+            android:name="com.example.ptsapp.How18">
+           
+        <howtoexercise.How18           android:name="com.example.ptsapp.How19">
+           
+        </activity>howtoexercise.How19 android:name="com.example.ptsapp.How20">
+           
+        </activity>            
+    </application>
+
+</manifest>
