@@ -1,15 +1,28 @@
-
+/***
+ * Excerpted from "Hello, Android! 3e",
+ * published by The Pragmatic Bookshelf.
+ * Copyrights apply to this code. It may not be used to create training material, 
+ * courses, books, articles, and the like. Contact us if you are in doubt.
+ * We make no guarantees that this code is fit for any purpose. 
+ * Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+***/
 package com.example.ptsapp;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Matrix;
 import android.graphics.PointF;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.FloatMath;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class How1 extends Activity implements OnTouchListener {
@@ -34,9 +47,31 @@ public class How1 extends Activity implements OnTouchListener {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.how1);
       ImageView view = (ImageView) findViewById(R.id.imageView1);
+      ImageButton imgBtn = (ImageButton) findViewById(R.id.imageButton1);
       view.setOnTouchListener(this);
-   }
+      
+      imgBtn.setOnClickListener(new View.OnClickListener() {
 
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			String url = "http://sports.video.m.rmcnmv.naver.com/vod/null?id=2111&si=0&secure=708755a883bb9ef3f926ce49347753d27245ffee1d6b0213cecaa95f214d4e6d6d4a1d546c0826f96237ad6b34787aa46cd9dd299574d3a626c546e14c1cc2cc9dcc9f889c74d12ec8ffd946d0ca5cd8cedbb0965f3d79ffac74898926c3c7cdc7258ee626b6f3f312ee59f2cdf51cc9&csu=true";
+			Uri uri = Uri.parse(url);
+			Intent intent = new Intent(Intent.ACTION_VIEW);
+			intent.setDataAndType(uri, "video/mp4");
+			
+			try {
+				startActivity(intent);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+    	  
+      });
+   }
+   
+   
+   
    @Override
    public boolean onTouch(View v, MotionEvent event) {
       ImageView view = (ImageView) v;
