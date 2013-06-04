@@ -2,14 +2,17 @@
 package com.example.ptsapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Matrix;
 import android.graphics.PointF;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.FloatMath;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class How7 extends Activity implements OnTouchListener {
@@ -28,13 +31,35 @@ public class How7 extends Activity implements OnTouchListener {
    PointF start = new PointF();
    PointF mid = new PointF();
    float oldDist = 1f;
-
+   DBConnHepler db;
+   
    @Override
    public void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
-      setContentView(R.layout.how1);
+      setContentView(R.layout.how7);
       ImageView view = (ImageView) findViewById(R.id.imageView1);
+      ImageButton imgBtn = (ImageButton) findViewById(R.id.imageButton1);
       view.setOnTouchListener(this);
+      db = new DBConnHepler(this);
+      db.getReadableDatabase();
+
+      imgBtn.setOnClickListener(new View.OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			
+			Uri uri = Uri.parse(db.getUrl("How7"));
+			Intent intent = new Intent(Intent.ACTION_VIEW);
+			intent.setDataAndType(uri, "video/mp4");
+			try {
+				startActivity(intent);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+    	  
+      });
    }
 
    @Override

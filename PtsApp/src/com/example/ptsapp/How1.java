@@ -13,6 +13,9 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Matrix;
 import android.graphics.PointF;
 import android.net.Uri;
@@ -41,7 +44,8 @@ public class How1 extends Activity implements OnTouchListener {
    PointF start = new PointF();
    PointF mid = new PointF();
    float oldDist = 1f;
-
+   DBConnHepler db;
+   
    @Override
    public void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
@@ -49,17 +53,18 @@ public class How1 extends Activity implements OnTouchListener {
       ImageView view = (ImageView) findViewById(R.id.imageView1);
       ImageButton imgBtn = (ImageButton) findViewById(R.id.imageButton1);
       view.setOnTouchListener(this);
-      
+      db = new DBConnHepler(this);
+      db.getReadableDatabase();
+
       imgBtn.setOnClickListener(new View.OnClickListener() {
 
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			String url = "http://sports.video.m.rmcnmv.naver.com/vod/null?id=2111&si=0&secure=708755a883bb9ef3f926ce49347753d27245ffee1d6b0213cecaa95f214d4e6d6d4a1d546c0826f96237ad6b34787aa46cd9dd299574d3a626c546e14c1cc2cc9dcc9f889c74d12ec8ffd946d0ca5cd8cedbb0965f3d79ffac74898926c3c7cdc7258ee626b6f3f312ee59f2cdf51cc9&csu=true";
-			Uri uri = Uri.parse(url);
+			
+			Uri uri = Uri.parse(db.getUrl("How1"));
 			Intent intent = new Intent(Intent.ACTION_VIEW);
 			intent.setDataAndType(uri, "video/mp4");
-			
 			try {
 				startActivity(intent);
 			} catch (Exception e) {
