@@ -8,11 +8,27 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical"
+            android:paddingLeft="60dp" >
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lateralraise" />
+
+        </LinearLayout>
+
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:scaleType="matrix"
             android:src="@drawable/letrulage" />
+
     </LinearLayout>
 
 </ScrollView>
