@@ -10577,3 +10577,30 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.ui 2 2 2013-05-31 00:25:17.537
 !MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2013-06-06 03:31:01.130 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.6.0_41
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 2 2013-06-06 16:36:43.011
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-06-06 16:36:53.353
+!MESSAGE fileChanged: failed to find manifest package for project Utility
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-06-06 16:39:08.283
+!MESSAGE fileChanged: failed to find manifest package for project CTCalendar example
+!SESSION 2013-06-06 16:51:31.069 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.6.0_41
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 2 2013-06-06 17:09:00.252
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-06-07 14:45:14.664
+!MESSAGE fileChanged: failed to find manifest package for project angelica
