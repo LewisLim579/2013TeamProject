@@ -30,7 +30,7 @@ public class MainMenu extends Activity {
 		});
 		b3.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				Intent intent = new Intent(MainMenu.this, Schedule.class);
+				Intent intent = new Intent(MainMenu.this, Ex07_06Activity.class);
 				startActivity(intent);
 			}
 		});
