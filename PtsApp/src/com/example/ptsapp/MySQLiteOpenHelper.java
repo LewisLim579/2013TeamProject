@@ -23,6 +23,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
         
         String sss = "insert into student ( name, age ,address ) values ( 'È«±æµ¿' , 18,'¼­¿ï')";
         db.execSQL(sss);
+
 	}
 
 	@Override

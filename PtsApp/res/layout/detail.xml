@@ -5,7 +5,6 @@
     android:orientation="vertical" >
 
     <TableLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/TableLayout01"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" >
@@ -20,7 +19,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
-                android:text="아이디 :" >
+                android:text="우선순위 :" >
             </TextView>
 
             <EditText
@@ -42,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
-                android:text="이름:" >
+                android:text="운동명:" >
             </TextView>
 
             <EditText
@@ -63,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
-                android:text="주소:" >
+                android:text="특이사항:" >
             </TextView>
 
             <EditText
@@ -84,7 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
-                android:text="나이 :" >
+                android:text="세트수 :" >
             </TextView>
 
             <EditText

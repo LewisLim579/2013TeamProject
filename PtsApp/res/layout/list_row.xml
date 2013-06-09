@@ -18,7 +18,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="이름"
+        android:text="운동명"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -26,7 +26,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="나이"
+        android:text="새트수"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -34,7 +34,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="주소"
+        android:text="특이사항"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </LinearLayout>
