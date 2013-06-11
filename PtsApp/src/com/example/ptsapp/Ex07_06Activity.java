@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.*;
 import android.widget.AdapterView;
 import android.widget.CursorAdapter;
 import android.widget.EditText;

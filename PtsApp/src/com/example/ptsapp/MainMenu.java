@@ -16,6 +16,8 @@ public class MainMenu extends Activity {
 		ImageButton b = (ImageButton) findViewById(R.id.btn1);
 		ImageButton b2 = (ImageButton) findViewById(R.id.btn2);
 		ImageButton b3 = (ImageButton) findViewById(R.id.btn3);
+		ImageButton b4 = (ImageButton) findViewById(R.id.btn4);
+		
 		b.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent(MainMenu.this, Distinguish.class);
@@ -31,6 +33,12 @@ public class MainMenu extends Activity {
 		b3.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent(MainMenu.this, Ex07_06Activity.class);
+				startActivity(intent);
+			}
+		});
+		b4.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(MainMenu.this, Shop.class);
 				startActivity(intent);
 			}
 		});

@@ -19,8 +19,10 @@
 <fullyQualifiedTypeName name="com.example.ptsapp.MainActivity"/>
 <fullyQualifiedTypeName name="com.example.ptsapp.Mainmenu"/>
 <fullyQualifiedTypeName name="android.widget.ImageButton"/>
-<fullyQualifiedTypeName name="com.example.ptsapp.R.id"/>
 <fullyQualifiedTypeName name="android.view.View.OnTouchListener"/>
 <fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="android.graphics.Matrix"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.R"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.R.id"/>
+<fullyQualifiedTypeName name="android.net.Uri"/>
 </qualifiedTypeNameHistroy>
