@@ -102,6 +102,7 @@
             android:name="com.example.ptsapp.Ha2">
            
         </activity>
+
         <activity
             android:name="com.example.ptsapp.Ha3">
            
@@ -198,9 +199,42 @@
 <activity
             android:name="com.example.ptsapp.Food">
            
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.Mon">
+           
+        </activity> 
+        <activity
+            android:name="com.example.ptsapp.Tues">
+           
+        </activity> 
+        <activity
+            android:name="com.example.ptsapp.Wednes">
+           
+        </activity> 
+        <activity
+            android:name="com.example.ptsapp.Thurs">
+           
+        </activity> 
+        <activity
+            android:name="com.example.ptsapp.Fri">
+            
+           
+        </activity>  
+        <activity
+            android:name="com.example.ptsapp.Satur">
+           
+        </activity> 
+        <activity
+            android:name="com.example.ptsapp.Sun">
+           
         </activity> 
 <activity
             android:name="com.example.ptsapp.Drink">
+           
+        </activity>
+                <activity
+            android:name="com.example.ptsapp.ShowWeek">
            
         </activity> 
         <activity

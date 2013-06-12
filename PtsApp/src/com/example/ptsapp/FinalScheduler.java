@@ -13,10 +13,17 @@ public class FinalScheduler extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fschedule);
 		ImageButton b1 = (ImageButton) findViewById(R.id.todayexercise);
+		ImageButton b2 = (ImageButton) findViewById(R.id.showweek);
 		
 		b1.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent(FinalScheduler.this, TodayExercise.class);
+				startActivity(intent);
+			}
+		});
+		b2.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(FinalScheduler.this, ShowWeek.class);
 				startActivity(intent);
 			}
 		});

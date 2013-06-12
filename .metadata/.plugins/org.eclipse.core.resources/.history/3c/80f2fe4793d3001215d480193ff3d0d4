@@ -1,0 +1,23 @@
+package com.example.ptsapp;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+
+public class ShowWeek extends Activity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.showweek);
+        ImageButton b1 = (ImageButton) findViewById(R.id.mon);	
+		b1.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(ShowWeek.this, Mon.class);
+				startActivity(intent);
+			}
+		});
+    }
+}

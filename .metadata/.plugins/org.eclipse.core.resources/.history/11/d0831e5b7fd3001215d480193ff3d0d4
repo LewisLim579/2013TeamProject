@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hmenu" >
+
+    <LinearLayout
+        android:layout_width="259dp"
+        android:layout_height="200dp"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="50dp"
+            android:background="#00000000"
+            android:src="@drawable/btn1" />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="125dp"
+       android:orientation="vertical" >
+
+       <ImageButton
+           android:id="@+id/btn2"
+           android:layout_width="296dp"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_weight="1.66"
+           android:background="#00000000"
+           android:src="@drawable/btn3" />
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="118dp"
+       android:orientation="vertical" >
+
+       <ImageButton
+           android:id="@+id/btn3"
+           android:layout_width="276dp"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_weight="0.41"
+           android:background="#00000000"
+           android:src="@drawable/btn2" />
+
+   </LinearLayout>
+
+<LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="159dp"
+       android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:src="@drawable/btn4" />
+
+    </LinearLayout>
+
+</LinearLayout>
