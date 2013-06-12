@@ -206,7 +206,11 @@
         <activity
             android:name="com.example.ptsapp.schel">
            
-        </activity>               
+        </activity>
+        <activity
+            android:name="com.example.ptsapp.FinalScheduler">
+           
+        </activity>                
         <activity
             android:name=".Ex07_06Activity"
             android:label="@string/app_name" >
