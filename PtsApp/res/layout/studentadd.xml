@@ -39,7 +39,7 @@
         </TextView>
 
         <EditText
-            android:id="@+id/editAddress"
+            android:id="@+id/editDay"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.8"
@@ -60,7 +60,7 @@
         </TextView>
 
         <EditText
-            android:id="@+id/editAge"
+            android:id="@+id/editsets"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.8"
