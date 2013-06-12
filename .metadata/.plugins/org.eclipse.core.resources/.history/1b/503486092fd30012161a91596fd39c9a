@@ -13,7 +13,6 @@ public class MySQLiteHandler {
 	
 	public MySQLiteHandler(Context ctx){
 		
-		
 		helper = new MySQLiteOpenHelper(ctx, "student1.sqlite", null, 1);
 	}
 	// 데이터베이스 open
