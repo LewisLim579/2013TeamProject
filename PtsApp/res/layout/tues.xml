@@ -10,6 +10,11 @@
             android:layout_marginTop="20dp"
             android:src="@drawable/tues"
             android:layout_gravity="center" />
-    
+     <ListView
+        android:id="@+id/listView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="#00000000" />
+       
 
 </LinearLayout>

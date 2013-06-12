@@ -13,13 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="" key="selection"/>
+		<item value="todayex" key="selection"/>
 		<list key="findhistory">
+			<item value="Ex07_10Activity"/>
+			<item value="main"/>
 			<item value="sdk"/>
 			<item value="newDist"/>
 			<item value="r.id"/>
 		</list>
 		<list key="replacehistory">
+			<item value="todayex"/>
 		</list>
 	</section>
 </section>

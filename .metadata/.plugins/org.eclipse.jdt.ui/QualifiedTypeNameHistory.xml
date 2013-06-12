@@ -23,6 +23,16 @@
 <fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="android.graphics.Matrix"/>
 <fullyQualifiedTypeName name="com.example.ptsapp.R"/>
-<fullyQualifiedTypeName name="com.example.ptsapp.R.id"/>
 <fullyQualifiedTypeName name="android.net.Uri"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.R.id"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.Ex07_06Activity"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.Ex07_07Activity"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.Ex07_08Activity"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.Ex07_09Activity"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.Ex07_10Activity"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.Ex07_11Activity"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.Ex07_12Activity"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.MainMenu"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.FinalScheduler"/>
+<fullyQualifiedTypeName name="com.example.ptsapp.ShowWeek"/>
 </qualifiedTypeNameHistroy>
