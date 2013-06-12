@@ -161,10 +161,10 @@ public final class R {
         public static final int btnUpdate=0x7f080014;
         public static final int drinkbtn=0x7f080038;
         public static final int drinkbtn1=0x7f080019;
-        public static final int editAddress=0x7f08000f;
-        public static final int editAge=0x7f080012;
+        public static final int editDay=0x7f08000f;
         public static final int editId=0x7f08000b;
         public static final int editName=0x7f08000d;
+        public static final int editsets=0x7f080012;
         public static final int foodbtn=0x7f080039;
         public static final int foodbtn1=0x7f08001a;
         public static final int h1=0x7f08001e;
@@ -200,10 +200,10 @@ public final class R {
         public static final int sangbtn=0x7f080021;
         public static final int scrollView1=0x7f080020;
         public static final int textView1=0x7f080028;
-        public static final int txtAddress=0x7f080026;
-        public static final int txtAge=0x7f080025;
+        public static final int txtDay=0x7f080026;
         public static final int txtId=0x7f080023;
         public static final int txtName=0x7f080024;
+        public static final int txtsets=0x7f080025;
         public static final int weight=0x7f080003;
     }
     public static final class layout {

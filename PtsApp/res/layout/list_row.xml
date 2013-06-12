@@ -22,7 +22,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
-        android:id="@+id/txtAge"
+        android:id="@+id/txtsets"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -30,11 +30,11 @@
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
-        android:id="@+id/txtAddress"
+        android:id="@+id/txtDay"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="특이사항"
+        android:text="날짜"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </LinearLayout>

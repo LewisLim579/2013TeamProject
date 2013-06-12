@@ -1,10 +1,15 @@
 package com.example.ptsapp;
 
+
+
+
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -12,19 +17,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
-import android.widget.AdapterView;
-import android.widget.CursorAdapter;
-import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
-import android.widget.TextView;
 
 public class Ex07_06Activity extends Activity {
     
 	
 	ListView listView;
 	MySQLiteHandler handler;
-	DBAdapter DBA;
+	ProductDBHelper mHelper;
 	 Cursor c;
 	 SimpleCursorAdapter adapter;
 	 
@@ -36,16 +35,16 @@ public class Ex07_06Activity extends Activity {
         listView = (ListView)findViewById(R.id.listView1);
         
         handler = MySQLiteHandler.open(getApplicationContext());
-        
+       
         c = handler.selectAll();
         startManagingCursor(c);
         adapter =        new SimpleCursorAdapter(
         				 getApplicationContext(),
         				 R.layout.list_row,
         				 c,
-        				 new String[]{"_id","name","age","address"},
+        				 new String[]{"_id","name","Day","sets"},
         				 
-        				 new int[]{ R.id.txtId, R.id.txtName, R.id.txtAge, R.id.txtAddress },
+        				 new int[]{ R.id.txtId, R.id.txtName, R.id.txtsets, R.id.txtDay },
         				 CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
         
         listView.setAdapter(adapter);
@@ -87,8 +86,8 @@ public class Ex07_06Activity extends Activity {
 			View convertView = inf.inflate(R.layout.studentadd, null);
 			
 		final	EditText  editName = (EditText)convertView.findViewById(R.id.editName);
-		final	EditText editAddress = (EditText)convertView.findViewById(R.id.editAddress);
-		final	EditText editAge = (EditText)convertView.findViewById(R.id.editAge);
+		final	EditText editDay = (EditText)convertView.findViewById(R.id.editDay);
+		final	EditText editsets = (EditText)convertView.findViewById(R.id.editsets);
 			
 			AlertDialog.Builder builder = new AlertDialog.Builder(Ex07_06Activity.this);
 			builder.setTitle("운동 일정 등록");
@@ -100,10 +99,10 @@ public class Ex07_06Activity extends Activity {
 				public void onClick(DialogInterface dialog, int which) {
 
 					String name = editName.getText().toString();
-					String address = editAddress.getText().toString();
-					String age =editAge.getText().toString();
+					String Day = editDay.getText().toString();
+					String sets =editsets.getText().toString();
 					
-					handler.insert(name,  Integer.parseInt(age) ,address );
+					handler.insert(name,  Integer.parseInt(sets) ,Day );
 					
 					//추가 내용 다시 가져오기
 					c.requery();

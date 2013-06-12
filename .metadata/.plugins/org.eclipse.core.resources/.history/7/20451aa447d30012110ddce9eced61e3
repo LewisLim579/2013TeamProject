@@ -1,0 +1,103 @@
+package com.example.ptsapp;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+import android.app.AlertDialog;
+import android.app.TabActivity;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.res.AssetManager;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
+import android.widget.TabHost;
+import android.widget.Toast;
+
+public class schel extends TabActivity {
+    /** Called when the activity is first created. */
+	//DB옮기기
+	public SQLiteDatabase db;
+	public Cursor cursor;
+	public SimpleCursorAdapter Adapter=null;
+	public SimpleCursorAdapter AdapterStomach=null;
+	public SimpleCursorAdapter AdapterColon=null;
+	public SimpleCursorAdapter AdapterLiver=null;
+	public SimpleCursorAdapter AdapterBreast=null;
+	public SimpleCursorAdapter AdapterCervix=null;
+	public static final String ROOT_DIR = "/data/data/com.romen.PtsApp/databases/";
+	ProductDBHelper mHelper;
+	public void setDB() {
+		  File folder = new File(ROOT_DIR);
+		  if(folder.exists()) {
+			 
+		  }
+		  else {
+		   folder.mkdirs();
+		   //Toast.makeText(this, "폴더생성", Toast.LENGTH_LONG).show();
+		  }
+
+		   AssetManager assetManager = getResources().getAssets();
+		   File outfile = new File(ROOT_DIR+"ch2.db"); //--폰에 위치할 경로
+		  
+		   InputStream is = null; 
+		     
+		   FileOutputStream fo = null;
+		   
+		   long filesize = 0;
+		         
+		  		     
+		   try {
+		    // --asset 폴더 및 복사할 DB 지정
+			   is = assetManager.open("ch2.db", AssetManager.ACCESS_BUFFER);  
+		     filesize = is.available(); //--사이즈 검증
+		     
+		    // 파일이 없거나 패키지 폴더에 설치된 DB파일이 포함된 DB파일 보다 크기가 같지않을 경우 DB파일을 덮어 쓴다.
+		     if (outfile.length() <= 0) {
+		     byte[] tempdata = new byte[(int) filesize];
+		     is.read(tempdata); 
+		     is.close(); 
+		     outfile.createNewFile();
+		     fo = new FileOutputStream(outfile);
+		     fo.write(tempdata);
+		     fo.close();    
+		    }
+		     else
+		     {
+		    	 //Toast.makeText(this, "db있음", Toast.LENGTH_LONG).show();
+		     
+		     }
+		   } catch (IOException e) { 
+			  Toast.makeText(this, "db이동실패", Toast.LENGTH_LONG).show();
+		   }   
+		  } 
+	class ProductDBHelper extends SQLiteOpenHelper{
+
+		public ProductDBHelper(Context context) {
+			super(context, "ch2.db", null, 1);
+			// TODO Auto-generated constructor stub
+		}
+
+		@Override
+		public void onCreate(SQLiteDatabase db) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+			// TODO Auto-generated method stub
+			
+		}
+		  
+	}
+}
