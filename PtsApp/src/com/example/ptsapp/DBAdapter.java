@@ -15,7 +15,7 @@ public class DBAdapter {
 
 	
 	private static String DB_PATH;
-	private static String DB_NAME;
+	private static String DB_NAME="ch2";
 	
 	private final Context crcontext;
 

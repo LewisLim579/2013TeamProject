@@ -24,6 +24,7 @@ public class Ex07_06Activity extends Activity {
 	
 	ListView listView;
 	MySQLiteHandler handler;
+	DBAdapter DBA;
 	 Cursor c;
 	 SimpleCursorAdapter adapter;
 	 
