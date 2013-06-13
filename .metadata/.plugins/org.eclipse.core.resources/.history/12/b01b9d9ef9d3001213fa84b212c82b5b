@@ -1,0 +1,110 @@
+package com.jung;
+
+import android.app.Activity;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.os.Bundle;
+import android.util.AttributeSet;
+import android.view.ContextMenu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ContextMenu.ContextMenuInfo;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class ContextMenuActivity extends Activity {
+    /** Called when the activity is first created. */
+	Button btn;
+	TextView textView;
+	CustomView customView;
+	static int size=40;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        btn = (Button)findViewById(R.id.btn);
+        textView = (TextView)findViewById(R.id.textView);
+        customView = (CustomView)findViewById(R.id.customView);
+        
+        registerForContextMenu(btn);
+        registerForContextMenu(textView);
+        registerForContextMenu(customView);
+        
+        
+    }
+    
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+    	// TODO Auto-generated method stub
+    	switch(item.getItemId()){
+    	case 1:
+    		size = 10;
+    		customView.invalidate();
+    		return true;
+    	case 2:
+    		size = 20;
+    		customView.invalidate();
+    		return true;
+    	case 3:
+    		size = 30;
+    		customView.invalidate();
+    		return true;
+    	case 4:
+    		size = 40;
+    		customView.invalidate();
+    		return true;
+    	}
+    	return false;
+    }
+    
+}
+class CustomView extends View{
+	public CustomView(Context context) {
+		// TODO Auto-generated constructor stub
+		super(context);
+	}
+	public CustomView(Context context,AttributeSet attrs) {
+		// TODO Auto-generated constructor stub
+		super(context, attrs);
+	}
+	@Override
+	protected void onDraw(Canvas canvas) {
+		// TODO Auto-generated method stub
+		Paint p = new Paint();
+		switch(ContextMenuActivity.size){
+		case 10:
+		p.setTextSize(10);
+		break;
+		case 20:
+    		p.setTextSize(20);
+    		break;
+		case 30:
+    		p.setTextSize(30);
+    		break;
+		case 40:
+    		p.setTextSize(40);
+    		break;
+		case 50:
+    		p.setTextSize(50);
+    		break;
+		
+		}
+		
+		p.setColor(Color.WHITE);
+		String msg = "CustomView ContextMenu";
+		canvas.drawText(msg, 0, 100, p);
+	}
+	@Override
+	protected void onCreateContextMenu(ContextMenu menu) {
+		// TODO Auto-generated method stub
+		
+		menu.setHeaderTitle("주차선택");
+		menu.add(0, 1, 0, "1");
+		menu.add(0, 2, 0, "2");
+		menu.add(0, 3, 0, "3");
+		menu.add(0, 4, 0, "4");
+		menu.add(0, 5, 0, "5");
+	}
+}

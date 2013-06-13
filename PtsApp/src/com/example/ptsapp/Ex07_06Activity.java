@@ -37,8 +37,7 @@ public class Ex07_06Activity extends Activity {
         handler = MySQLiteHandler.open(getApplicationContext());
        
         c = handler.selectAll();
-        int x=1;
-        String sql="SELECT * FROM name WHERE week="+x+" AND Day='월요일'";
+        String sql="SELECT * FROM name WHERE week="+FinalScheduler.weekk+" AND Day='월요일'";
 		d = handler.db.rawQuery(sql, null);
        // db=mHelper.getWritableDatabase();
         //d=db.rawQuery("SELECT * FROM name WHERE 월요일",null);

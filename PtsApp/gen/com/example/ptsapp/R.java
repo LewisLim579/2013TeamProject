@@ -204,7 +204,6 @@ public final class R {
         public static final int listView7=0x7f080048;
         public static final int monday=0x7f08003e;
         public static final int nab=0x7f080045;
-        public static final int nextweek=0x7f08001f;
         public static final int oib=0x7f080046;
         public static final int preferMenu=0x7f08004e;
         public static final int rbtn=0x7f080004;
@@ -222,6 +221,7 @@ public final class R {
         public static final int sangbtn=0x7f080026;
         public static final int saturday=0x7f080043;
         public static final int scrollView1=0x7f080025;
+        public static final int selectweek=0x7f08001f;
         public static final int showweek=0x7f08001e;
         public static final int sunday=0x7f080044;
         public static final int textView1=0x7f08002c;
