@@ -30,7 +30,7 @@ public class FinalScheduler extends Activity {
 		});
 		b2.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				Intent intent = new Intent(FinalScheduler.this, Ex07_06Activity.class);
+				Intent intent = new Intent(FinalScheduler.this, ShowWeek.class);
 				startActivity(intent);
 			}
 		});

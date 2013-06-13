@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/addMenu"
-        android:title="학생등록"
+        android:title="ㅇ일정등록"
         android:icon="@android:drawable/ic_input_add"/>
   
     <item
